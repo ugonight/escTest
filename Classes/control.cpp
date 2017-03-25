@@ -11,6 +11,12 @@ Control *Control::getInstance() {
 	return instance;
 }
 
+Control::~Control() {
+	for (auto field : mFieldList) {
+		CC_SAFE_RELEASE_NULL(field.second);
+	}
+}
+
 bool Control::init()
 {
 	if (!Scene::init())

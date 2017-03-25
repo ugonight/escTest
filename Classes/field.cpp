@@ -2,6 +2,12 @@
 
 USING_NS_CC;
 
+Field::~Field() {
+	for (auto obj : mObjectList) {
+		CC_SAFE_RELEASE_NULL(obj.second);
+	}
+}
+
 bool Field::init()
 {
 	if (!Layer::init())

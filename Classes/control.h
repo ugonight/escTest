@@ -9,6 +9,8 @@ private:
 	std::map<std::string, Field*> mFieldList;
 
 public:
+	~Control();
+
 	virtual bool init();
 	void initField();
 

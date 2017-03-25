@@ -13,6 +13,8 @@ protected:
 	void addObject(ObjectN* obj, std::string objName, int ZOder, bool addChild);
 
 public:
+	~Field();
+
 	virtual bool init();
 
 	virtual void initField();

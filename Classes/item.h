@@ -4,6 +4,8 @@
 
 class Item : public cocos2d::Layer {
 public:
+	~Item();
+
 	virtual bool init();
 
 	void itemGet(std::string itemName);

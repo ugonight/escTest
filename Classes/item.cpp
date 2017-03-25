@@ -9,6 +9,12 @@ Item *Item::getInstance() {
 	return instance;
 }
 
+Item::~Item() {
+	for (auto item : mItemList) {
+		delete item.second;
+	}
+}
+
 bool Item::init()
 {
 	if (!Layer::init())
