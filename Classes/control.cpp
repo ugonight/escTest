@@ -7,7 +7,6 @@ USING_NS_CC;
 static Control* instance;
 
 Control *Control::getInstance() {
-
 	return instance;
 }
 

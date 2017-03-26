@@ -8,6 +8,8 @@ class ObjectN : public cocos2d::Sprite {
 	bool touchOn(cocos2d::Touch* touch, cocos2d::Event* event);
 
 public:
+	virtual ~ObjectN();
+
 	virtual bool init();
 
 	void setArea(cocos2d::Rect rect);

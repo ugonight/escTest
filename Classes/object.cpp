@@ -2,6 +2,10 @@
 
 USING_NS_CC;
 
+ObjectN::~ObjectN() {
+	CC_SAFE_RELEASE_NULL(mTouchEvent);
+}
+
 bool ObjectN::init() {
 	if (!Sprite::init())
 	{

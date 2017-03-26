@@ -4,7 +4,7 @@
 
 class Item : public cocos2d::Layer {
 public:
-	~Item();
+	virtual ~Item();
 
 	virtual bool init();
 

@@ -9,7 +9,7 @@ private:
 	std::map<std::string, Field*> mFieldList;
 
 public:
-	~Control();
+	virtual ~Control();
 
 	virtual bool init();
 	void initField();
